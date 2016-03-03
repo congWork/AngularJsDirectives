@@ -1,6 +1,6 @@
 # AngularJsDirectives
->all custom directives are placed here
----
+all custom directives are placed here
+***
 # Usage
 1. download the ngMessage javascript file from angularJs website
 2. add script reference to congDirectives.js before your own script
