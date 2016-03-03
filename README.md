@@ -15,3 +15,6 @@ all custom directives are placed here
 </form>
 ```
 5. wala, enjoy!
+
+# Example
+<a href="http://plnkr.co/0PYuNJQDSsxLpHic0ADa"></a>
