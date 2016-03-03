@@ -6,7 +6,7 @@ all custom directives are placed here
 1. download the ngMessage javascript file from angularJs website
 2. add script reference to congDirectives.js before your own script
 3. add script: 
-   ```javascript
+```javascript
 window.myApp = angular.module("myApp", ["ngMessages","congDirectives"]);
 ```
 4. html template:
