@@ -1,10 +1,13 @@
 # AngularJsDirectives
 all custom directives are placed here
-
+---
 # Usage
 1. download the ngMessage javascript file from angularJs website
 2. add script reference to congDirectives.js before your own script
-3. add script: window.myApp = angular.module("myApp", ["ngMessages","congDirectives"]);
+3. add script: 
+   ```script
+window.myApp = angular.module("myApp", ["ngMessages","congDirectives"]);
+```
 4. html template:
 ```html
 <form name="myForm" novalidate>
@@ -14,8 +17,8 @@ all custom directives are placed here
     </div>
 </form>
 ```
-5. wala, enjoy!
 
+---
 # Example
 [Please click here for an example](http://plnkr.co/0PYuNJQDSsxLpHic0ADa "Example")
 
