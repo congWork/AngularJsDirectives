@@ -17,4 +17,5 @@ all custom directives are placed here
 5. wala, enjoy!
 
 # Example
-<a href="http://plnkr.co/0PYuNJQDSsxLpHic0ADa"></a>
+[Please click here for an example](http://plnkr.co/0PYuNJQDSsxLpHic0ADa "Example")
+
