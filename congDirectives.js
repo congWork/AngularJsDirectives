@@ -23,11 +23,11 @@
             },
        
             template: '<div class="form-group has-feedback" ng-class="vm.getValidationClass()"><ng-transclude></ng-transclude>' +
-                '<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="top:32px !important;position:absolute;" ng-show="vm.getInputObj().$dirty"></span>' +
-      '<span id="inputSuccess2Status" class="sr-only">(success)</span>'+
-            '<div ng-messages="vm.getInputObj().$error" ng-if="vm.getInputObj().$dirty" class="help-block">' +
-                      '<div ng-message="required">This field is required</div>' +
-                      '<div ng-message="pattern">Invalid house number</div> </div></div>'
+                '<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true" style="top:32px !important;position:absolute;" ng-show="vm.isValid() && vm.getInputObj().$dirty"></span>' +
+                '<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true" style="top:32px !important;position:absolute;" ng-show="!vm.isValid() && vm.getInputObj().$dirty"></span>' +
+                '<div ng-messages="vm.getInputObj().$error" ng-if="vm.getInputObj().$dirty" class="help-block">' +
+                '<div ng-message="required">This field is required</div>' +
+                '<div ng-message="pattern">Invalid house number</div> </div></div>'
 
         };
     }
@@ -37,6 +37,7 @@
         vm.field = $scope.inputField;
         vm.getValidationClass = getValidationClass;
         vm.getInputObj = getInputObj;
+        vm.isValid = isValid;
         function getInputObj() {
             return $scope.form[vm.field];
         }
