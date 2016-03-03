@@ -1,4 +1,5 @@
 # AngularJsDirectives
+***
 all custom directives are placed here
 ***
 # Usage
@@ -18,7 +19,7 @@ window.myApp = angular.module("myApp", ["ngMessages","congDirectives"]);
 </form>
 ```
 
----
+***
 # Example
 [Please click here for an example](http://plnkr.co/0PYuNJQDSsxLpHic0ADa "Example")
 
